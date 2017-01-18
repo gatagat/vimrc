@@ -25,3 +25,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+set foldlevelstart=1
+" SimplyFold (Python folding) setup
+"let g:SimpylFold_docstring_preview = 1
+"let g:SimpylFold_fold_docstring = 0
+let g:SimpylFold_fold_import = 0
