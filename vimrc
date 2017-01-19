@@ -21,7 +21,7 @@ set path+=** " Search for files to open in any subdirectories.
 set wildmenu wildmode=longest:full,full " First match the longest, then tab through.
 
 " Highlighting of searches and in vimdiff
-hi Search term=reverse ctermbg=darkgray
+hi Search ctermfg=black ctermbg=yellow
 hi DiffChange term=bold ctermfg=black ctermbg=lightgray
 hi DiffAdd term=bold ctermfg=black ctermbg=lightblue
 hi DiffDelete term=bold ctermfg=darkblue ctermbg=lightblue
