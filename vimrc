@@ -27,6 +27,9 @@ hi DiffAdd term=bold ctermfg=black ctermbg=lightblue
 hi DiffDelete term=bold ctermfg=darkblue ctermbg=lightblue
 hi DiffText term=reverse cterm=bold ctermbg=red
 
+" Rebuild tags
+command! MakeTags !ctags -R .
+
 " Navigation between splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
