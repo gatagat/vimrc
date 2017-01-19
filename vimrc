@@ -41,6 +41,10 @@ let g:netrw_liststyle=3     " Tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" Keep selection in visual mode after indent
+vnoremap < <gv
+vnoremap > >gv
+
 " Setup folding
 set foldlevelstart=2
 
