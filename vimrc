@@ -28,7 +28,8 @@ hi DiffDelete term=bold ctermfg=darkblue ctermbg=lightblue
 hi DiffText term=reverse cterm=bold ctermbg=red
 
 " Rebuild tags
-command! MakeTags !ctags -R .
+" ctags --list-kinds=python
+command! MakeTags !ctags -R --python-kinds=-i .
 
 " Navigation between splits
 nnoremap <C-J> <C-W><C-J>
