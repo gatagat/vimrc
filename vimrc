@@ -1,8 +1,27 @@
 " It this file is not found automatically you are using ViM < 7.4,
 " make a symlink from ~/.vimrc -> ~/.vim/vimrc
+"
+
+" ideas: https://github.com/mcantor/dotfiles/blob/master/vim/.vimrc
+" set this using filetype=vim
+" vim: fdm=marker foldenable sw=4 ts=4 sts=4
+"
+" {{{ something folded
+" hihihihi
+" }}}
 
 filetype on
 set nocompatible " Do not behave like the original "vi"
+
+" Setup Vundle
+" Download: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+Plugin 'VundleVim/Vundle.vim'
+
 " set modeline modelines=1 " Use the "vim:" modelines
 
 set hlsearch " Hilight search
@@ -56,6 +75,20 @@ vnoremap > >gv
 set foldlevelstart=2
 
 " Python folding setup
+Plugin 'tmhedberg/SimpylFold'
 "let g:SimpylFold_docstring_preview = 1
 "let g:SimpylFold_fold_docstring = 0
 let g:SimpylFold_fold_import = 0
+
+Plugin 'vim-syntastic/syntastic'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_auto_jump = 0
+"let g:syntastic_enable_signs=1
+" checkers: pep8/pycodestyle+pyflakes+pylint+python - or aggregate by flake8?
+let g:syntastic_python_checkers=['pycodestyle', 'pyflakes', 'python']
+"let g:syntastic_python_checkers=['pep8', 'pyflakes', 'python']
+
+call vundle#end()
