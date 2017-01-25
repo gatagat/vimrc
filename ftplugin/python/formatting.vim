@@ -1,7 +1,5 @@
 set et ts=4 sw=4 noai nosi
 
-hi SpellBad term=reverse ctermbg=darkgreen
-
 " Omnicompletion functions
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 "autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
