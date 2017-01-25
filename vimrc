@@ -41,10 +41,10 @@ set wildmenu wildmode=longest:full,full " First match the longest, then tab thro
 
 " Highlighting of searches and in vimdiff
 hi Search ctermfg=black ctermbg=yellow
-hi DiffChange term=bold ctermfg=black ctermbg=lightgray
-hi DiffAdd term=bold ctermfg=black ctermbg=lightblue
-hi DiffDelete term=bold ctermfg=darkblue ctermbg=lightblue
-hi DiffText term=reverse cterm=bold ctermbg=red
+hi DiffChange ctermfg=black ctermbg=lightgray
+hi DiffAdd ctermfg=black ctermbg=white
+hi DiffDelete ctermfg=black ctermbg=lightblue
+hi DiffText ctermfg=black ctermbg=lightred
 
 " Rebuild tags
 " ctags --list-kinds=python
