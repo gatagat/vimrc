@@ -65,7 +65,8 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " Insert a snippet from a template and position a cursor somewhere
-"nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+nnoremap ,pymain :read $HOME/.vim/skeletons/pymain.py<CR>/Program<CR>
+nnoremap ,pyfile :read $HOME/.vim/skeletons/pyfile.py<CR>/function<CR>
 
 " Keep selection in visual mode after indent
 vnoremap < <gv
