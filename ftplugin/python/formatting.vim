@@ -1,7 +1,4 @@
-set et ts=4 sw=4 ai si
-
-set noautoindent
-set nosmartindent
+set et ts=4 sw=4 noai nosi
 
 hi SpellBad term=reverse ctermbg=darkgreen
 
