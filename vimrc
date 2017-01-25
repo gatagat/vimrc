@@ -82,14 +82,11 @@ Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_fold_import = 0
 
 Plugin 'vim-syntastic/syntastic'
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-"let g:syntastic_auto_jump = 0
-"let g:syntastic_enable_signs=1
-" checkers: pep8/pycodestyle+pyflakes+pylint+python - or aggregate by flake8?
-let g:syntastic_python_checkers=['pycodestyle', 'pyflakes', 'python']
-"let g:syntastic_python_checkers=['pep8', 'pyflakes', 'python']
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_jump = 0
+let g:syntastic_python_checkers=['pyflakes', 'python', 'pycodestyle']
 
 call vundle#end()
