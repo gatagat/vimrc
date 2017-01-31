@@ -45,7 +45,7 @@ hi Search ctermfg=black ctermbg=yellow
 hi DiffChange ctermfg=black ctermbg=lightgray
 hi DiffAdd ctermfg=black ctermbg=white
 hi DiffDelete ctermfg=black ctermbg=lightblue
-hi DiffText ctermfg=black ctermbg=lightred
+hi DiffText ctermfg=black ctermbg=red
 hi SpellBad term=reverse ctermbg=darkgreen
 
 " Rebuild tags
