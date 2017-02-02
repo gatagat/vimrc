@@ -60,11 +60,15 @@ nnoremap <C-H> <C-W><C-H>
 
 " netrw settings
 let g:netrw_banner=0        " Disable the banner
-let g:netrw_browse_split=4  " Open in previous window
-let g:netrw_altv=1          " Open splits to the right
+let g:netrw_browse_split=0
+let g:netrw_preview=1       " Preview vertically
+let g:netrw_winsize=25      " Use only 25% of the width for the directory listing.
+let g:netrw_altv=1          " Open files to the right
 let g:netrw_liststyle=3     " Tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+nnoremap ,<Tab> :Lexplore<CR> " Open/close netrw
 
 " Insert a snippet from a template and position a cursor somewhere
 nnoremap ,pymain :read $HOME/.vim/skeletons/pymain.py<CR>/Program<CR>
