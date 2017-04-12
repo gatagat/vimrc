@@ -42,11 +42,16 @@ set mouse=i " Enable mouse in insert mode.
 
 " Highlighting of searches and in vimdiff
 hi Search ctermfg=black ctermbg=yellow
-hi DiffChange ctermfg=black ctermbg=lightgray
-hi DiffAdd ctermfg=black ctermbg=white
-hi DiffDelete ctermfg=black ctermbg=lightblue
-hi DiffText ctermfg=black ctermbg=red
-hi SpellBad term=reverse ctermbg=darkgreen
+if &diff
+  hi DiffChange ctermfg=black ctermbg=lightgray
+  hi DiffAdd ctermfg=black ctermbg=white
+  hi DiffDelete ctermfg=black ctermbg=lightblue
+  hi DiffText ctermfg=black ctermbg=red
+  hi SpellBad term=reverse ctermbg=darkgreen
+  set cursorline
+  hi CursorLine ctermbg=8 ctermfg=15
+  hi Cursor ctermbg=15 ctermfg=8
+endif
 
 " Rebuild tags
 " ctags --list-kinds=python
