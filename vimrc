@@ -18,8 +18,6 @@ set nocompatible " Do not behave like the original "vi"
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 Plugin 'VundleVim/Vundle.vim'
 
 " set modeline modelines=1 " Use the "vim:" modelines
@@ -99,5 +97,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_auto_jump = 0
 let g:syntastic_python_checkers=['pyflakes', 'python', 'pycodestyle']
+
+Plugin 'vim-scripts/loremipsum'
+nmap <Leader>l :Loremipsum<CR>
 
 call vundle#end()
