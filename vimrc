@@ -34,7 +34,9 @@ set ruler " Show current row,colume.
 filetype plugin on
 filetype plugin indent on
 set bs=2 " Let backspace behave _normal_.
-set path+=** " Search for files to open in any subdirectories.
+" XXX: Adding ** to path makes autocompletion crazy slow w/o tags and still
+" way too slow even with tags.
+"set path+=** " Search for files to open in any subdirectories.
 set wildmenu wildmode=longest:full,full " First match the longest, then tab through.
 set mouse=i " Enable mouse in insert mode.
 
