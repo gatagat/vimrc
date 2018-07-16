@@ -92,16 +92,22 @@ Plugin 'tmhedberg/SimpylFold'
 "let g:SimpylFold_fold_docstring = 0
 let g:SimpylFold_fold_import = 0
 
-Plugin 'vim-syntastic/syntastic'
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_auto_jump = 0
-let g:syntastic_python_checkers = ['pyflakes', 'python', 'pycodestyle']
-let g:syntastic_matlab_checkers = ['checkcode']
+" Typescript highlighting
+Plugin 'leafgarland/typescript-vim'
+" XXX: Next line is needed, even though it should not. Maybe related to
+" https://github.com/leafgarland/typescript-vim/issues/82
+autocmd BufNewFile,BufRead *.ts,*.tsx setlocal filetype=typescript
 
 Plugin 'vim-scripts/loremipsum'
 nmap <Leader>l :Loremipsum<CR>
+
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_path_to_python_interpreter = '/usr/bin/python' " Match to Python used for compilation.
+nnoremap <Leader>jd :YcmCompleter GoTo<CR>
+
+Plugin 'w0rp/ale'
+let g:ale_linters = {
+	\ 'typescript': ['tsserver'],
+	\ 'python': ['pyflakes', 'pycodestyle']}
 
 call vundle#end()
