@@ -101,9 +101,11 @@ autocmd BufNewFile,BufRead *.ts,*.tsx setlocal filetype=typescript
 Plugin 'vim-scripts/loremipsum'
 nmap <Leader>l :Loremipsum<CR>
 
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_path_to_python_interpreter = '/usr/bin/python' " Match to Python used for compilation.
-nnoremap <Leader>jd :YcmCompleter GoTo<CR>
+"Plugin 'Valloric/YouCompleteMe'
+"let g:ycm_path_to_python_interpreter = '/usr/bin/python' " Match to Python used for compilation.
+"nnoremap <Leader>jd :YcmCompleter GoTo<CR>
+
+Plugin 'zxqfl/tabnine-vim'
 
 Plugin 'w0rp/ale'
 let g:ale_linters = {
