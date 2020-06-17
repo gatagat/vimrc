@@ -102,8 +102,13 @@ Plugin 'vim-scripts/loremipsum'
 nmap <Leader>l :Loremipsum<CR>
 
 "Plugin 'Valloric/YouCompleteMe'
-"let g:ycm_path_to_python_interpreter = '/usr/bin/python' " Match to Python used for compilation.
 "nnoremap <Leader>jd :YcmCompleter GoTo<CR>
+"let g:ycm_keep_logfiles = 1
+"let g:ycm_log_level = 'debug'
+"let g:ycm_python_interpreter_path = 'python3' " one can use an external python
+"script to set this up, this than allows to have ycm respect a virtualenv,
+"see: https://github.com/ycm-core/YouCompleteMe#python-semantic-completion
+"let g:ycm_server_python_interpreter = 'python3'
 
 Plugin 'zxqfl/tabnine-vim'
 
