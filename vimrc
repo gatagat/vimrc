@@ -38,7 +38,7 @@ set bs=2 " Let backspace behave _normal_.
 " way too slow even with tags.
 "set path+=** " Search for files to open in any subdirectories.
 set wildmenu wildmode=longest:full,full " First match the longest, then tab through.
-set mouse=i " Enable mouse in insert mode.
+"set mouse=i " Enable mouse in insert mode.
 
 " Highlighting of searches and in vimdiff
 hi Search ctermfg=black ctermbg=yellow
