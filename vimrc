@@ -119,4 +119,12 @@ let g:ale_linters = {
 
 Plugin 'psf/black'
 
+"Try out:
+"
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"
+"Plugin 'elzr/vim-json'
+"
+
 call vundle#end()
