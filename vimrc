@@ -117,4 +117,6 @@ let g:ale_linters = {
 	\ 'typescript': ['tsserver'],
 	\ 'python': ['pyflakes', 'pycodestyle']}
 
+Plugin 'psf/black'
+
 call vundle#end()

@@ -20,3 +20,6 @@ My preferred setup of [vim](http://www.vim.org/).
         :PluginInstall
 
         ~/.vim/setup_tabnine.sh
+
+        cd ~/.vim/bundle/black
+        git checkout origin/stable -b stable
